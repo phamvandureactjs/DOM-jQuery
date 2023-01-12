@@ -1,0 +1,16 @@
+.result__layout{
+    background-color: rgb(163, 159, 159);
+    border: 2px solid rgb(163, 159, 159);
+    border-radius: 12px; 
+}
+.title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+.result__cal{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+
