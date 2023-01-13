@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Loan Calculator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h3>Nhập thông tin khoản vay</h3>
+    <div class="form-container">
+        <form action="" class="form">
+            <div class="form__row">
+                <label class="form__label" for="SoTienVay">1) Số tiền:</label>
+                <input class="form__input" type="text" id="SoTienVay">
+            </div>
+            <div class="form__row">
+                <label class="form__label" for="LaiSuatHangNam">2)Lãi suất hàng năm(%):</label>
+                <input class="form__input" type="text" id="LaiSuatHangNam">
+            </div>
+            <div class="form__row">
+                <label class="form__label" for="ThoiGianTra">3)Thời gian trả(tháng):</label>
+                <input class="form__input" type="text" id="ThoiGianTra">
+            </div>
+        </form>
+        <input type="button" name="calc" id="calc" onclick="calculate()" value="Tính">
+        <h3>Thông tin thanh toán</h3>
+        <form action="" class="form">
+            <div class="form__row">
+                <label class="form__label" for="SoTienTraHangThang">4) Số tiền hàng tháng phải trả:</label>
+                <!-- <input class="form__input" type="text" id="SoTienTraHangThang" style="width: 200px;"> -->
+                <p id="SoTienTraHangThang" style="border: 1px solid; margin-top: 0px; width: 170px; height: 20px;"></p>
+            </div>
+            <div class="form__row">
+                <label class="form__label" for="TongSoTienPhaiTra">5)Tổng số tiền phải trả:</label>
+                <!-- <input class="form__input" type="text" id="TongSoTienPhaiTra" style="width: 200px;"> -->
+                <p id="TongSoTienPhaiTra" style="border: 1px solid; margin-top: 0px; width: 170px; height: 20px;"></p>
+            </div>
+            <div class="form__row">
+                <label class="form__label" for="TongSoLaiPhaiTra">6)Tổng số lãi phải trả:</label>
+                <!-- <input class="form__input" type="text" id="TongSoLaiPhaiTra" style="width: 200px;"> -->
+                <p id="TongSoLaiPhaiTra" style="border: 1px solid; margin-top: 0px; width: 170px; height: 20px;"></p>
+            </div>
+        </form>
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>
